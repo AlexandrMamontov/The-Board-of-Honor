@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доска почёта</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="board">
+    <div class="board__date">
+      Сегодня среда / 28 ноября 2023
+    </div>
+    <div class="board__container vh-hidden">
+      <div class="board__wrapper">
+        <div class="board__block">
+          <h1 class="board__title">Доска&nbsp;почёта</h1>
+          <div class="board__buttons">
+            <a href="index.html" class="board__btn board__btn-post board__btn-post--active btn-reset">Мастера</a>
+            <a href="specialist.html" class="board__btn board__btn-post btn-reset">Специалисты</a>
+          </div>
+        </div>
+        <p class="board__text">
+          Качество обслуживания - это в первую очередь человеческое отношение к клиенту (служение) и при этом соблюдение сотрудниками регламентов компании.
+        </p>
+      </div>
+      <div class="board__article">
+        <div class="board__info info">
+          <div class="board__card">
+            <img src="img/ramka.svg" alt="border" class="board__border">
+            <img src="img/foto-master.jpg" alt="photo" class="board__photo">
+          </div>
+          <div class="info__more">
+            <div class="info__name">
+              <img src="img/icon-master-dm.svg" alt="icon" class="info__svg">
+              <div class="info__block">
+                <div class="info__post">Мастер</div>
+                <div class="info__fio">Носова светлана Владимировна</div>
+              </div>
+            </div>
+            <div class="info__address">
+              <img src="img/icon-adres.svg" alt="icon" class="info__svg">
+              <p class="info__place">
+                Волгоград ст. м. Проспект Мира, Астраханский переулок, д. 1/15
+              </p>
+            </div>
+            <ul class="info__list list-reset">
+              <li class="info__item">
+                <img src="img/icon-god.svg" alt="" class="info__svg">
+                <div class="info__block">
+                  <div class="info__number">2013</div>
+                  <div class="info__txt">
+                    Года начала работы
+                  </div>
+                </div>
+              </li>
+              <li class="info__item">
+                <img src="img/icon-zakaz.svg" alt="" class="info__svg">
+                <div class="info__block">
+                  <div class="info__number info__projects" data-target="782">0</div>
+                  <div class="info__txt">
+                    Принято заказов на период
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="info__call">
+              <img src="img/icon-skype.svg" alt="icon" class="info__svg">
+              <div class="info__block">
+                <div class="info__url">online@danila-master.ru</div>
+                <div class="info__txt">написать в skype</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info__news">
+          <img src="img/icon-info.svg" alt="count" class="info__count">
+          <div class="info__txt">новость</div>
+        </div>
+        <p class="info__descr">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique error officia tempore ipsam aperiam facilis blanditiis ea dignissimos debitis. Delectus possimus illum velit suscipit qui dolorem voluptatibus aut eaque a.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi rerum, ducimus maxime voluptatibus veritatis non et ut accusantium temporibus voluptatum laboriosam, exercitationem nemo sapiente perspiciatis architecto nesciunt ipsa aut? Tempora.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt consequuntur porro asperiores labore reprehenderit. Odit laudantium sunt vitae modi dolorem voluptates, molestias commodi neque reiciendis perspiciatis illum quis, voluptatem odio!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, repudiandae cumque in magnam veritatis repellendus unde quidem laudantium totam velit fuga dolorum obcaecati, excepturi maxime aliquid et ullam! Obcaecati, laudantium.
+        </p>
+        <p class="info__descr">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit est soluta in facere natus qui sapiente non, vero accusantium repudiandae vel odit ad! Consequatur ipsam accusamus quasi pariatur est!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eum architecto. Deserunt officia eos fugit incidunt doloribus libero esse? Praesentium, ipsam? Consequuntur aliquid possimus praesentium, molestias recusandae quo unde rerum.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae error suscipit ratione nulla aperiam fugiat dolore minus laudantium blanditiis minima ipsam, dolores reiciendis laboriosam incidunt veniam! Voluptatibus, consectetur expedita?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt deleniti inventore doloremque ducimus, voluptates, deserunt at quae porro architecto autem, reprehenderit in. Ex quod libero ipsum incidunt deserunt obcaecati sit!
+        </p>
+      </div>
+      <a href="index.html" class="board__btn board-master btn-reset board__btn--active">
+        <img src="img/icon-strelka.svg" alt="arrow" class="board__arrow-left">
+        Посмотреть мастеров
+      </a>
+      <a href="specialist.html" class="board__btn board-specialist btn-reset board__btn--active">
+        Посмотреть специалистов
+        <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
+      </a>
+    </div>
+  </div>
+
+  <script>
+    let valueDisplays = document.querySelectorAll('.info__projects')
+    let interval = 100
+
+    valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0
+      let endValue = parseInt(valueDisplay.getAttribute('data-target'))
+      let duration = Math.floor(interval / endValue)
+      let counter = setInterval(function() {
+        startValue += 1
+        valueDisplay.textContent = startValue
+        if (startValue == endValue) {
+          clearInterval(counter)
+        }
+      }, duration)
+    })
+  </script>
+
+</body>
+</html>

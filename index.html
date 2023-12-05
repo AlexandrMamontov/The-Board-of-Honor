@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="js/script.js"></script>
 </head>
@@ -22,17 +21,20 @@
         <div class="board__block">
           <h1 class="board__title">Доска&nbsp;почёта</h1>
           <div class="board__buttons">
-            <button class="board__btn board__btn-post board__btn-post--active btn-reset" data-path="one">Мастера</button>
-            <button class="board__btn board__btn-post btn-reset" data-path="two">Специалисты</button>
+            <a href="index.html" class="board__btn board__btn-post board__btn-post--active btn-reset">Мастера</a>
+            <a href="specialist.html" class="board__btn board__btn-post btn-reset">Специалисты</a>
           </div>
         </div>
         <p class="board__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto similique maiores asperiores, pariatur alias cupiditate qui accusamus facilis voluptatum, voluptas ipsum quod, delectus error fugit mollitia?
+          Качество обслуживания - это в первую очередь человеческое отношение к клиенту (служение) и при этом соблюдение сотрудниками регламентов компании.
         </p>
       </div>
-      <div class="swiper-container board__slider board__slider--active" data-target="one">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+      <div class="swiper-container board__slider">
+        <div class="swiper-wrapper board__wrapper">
+          <div class="swiper-slide board__slide">
+            <p class="board__cite">
+              Качество обслуживания - это в первую очередь человеческое отношение к клиенту (служение) и при этом соблюдение сотрудниками регламентов компании.
+            </p>
             <ul class="board__list list-reset">
               <li class="board__item">
                 <div class="board__card">
@@ -42,10 +44,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
               <li class="board__item">
                 <div class="board__card">
@@ -55,10 +57,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
               <li class="board__item">
                 <div class="board__card">
@@ -68,14 +70,17 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
             </ul>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide board__slide">
+            <p class="board__cite">
+              Служение людям - это тип отношения человека к своей деятельности, при котором он ощущает себя ответственным, обязанным добросовестно и высоко продуктивно выполнять свою работу.
+            </p>
             <ul class="board__list list-reset">
               <li class="board__item">
                 <div class="board__card">
@@ -85,10 +90,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
               <li class="board__item">
                 <div class="board__card">
@@ -98,10 +103,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
               <li class="board__item">
                 <div class="board__card">
@@ -111,14 +116,17 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
             </ul>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide board__slide">
+            <p class="board__cite">
+              В служении главное люди. Служить - это не решать за клиента, что для него лучше, а услышать "боль" клиента и помочь ему в решении его проблемы. Посмотреть на все глазами клиента.
+            </p>
             <ul class="board__list list-reset">
               <li class="board__item">
                 <div class="board__card">
@@ -128,10 +136,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
               <li class="board__item">
                 <div class="board__card">
@@ -141,10 +149,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
               <li class="board__item">
                 <div class="board__card">
@@ -154,14 +162,17 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
             </ul>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide board__slide">
+            <p class="board__cite">
+              Главное - это любить работать с людьми, иметь желание помогать им в решении их проблем, знать свой продукт, любить продавать.
+            </p>
             <ul class="board__list list-reset">
               <li class="board__item">
                 <div class="board__card">
@@ -171,10 +182,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
               <li class="board__item">
                 <div class="board__card">
@@ -184,10 +195,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
               <li class="board__item">
                 <div class="board__card">
@@ -197,275 +208,10 @@
                 </div>
                 <div class="board__name">Мастер: <span>Носова Светлана</span></div>
                 <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
+                <a href="page-master.html" class="board__btn-more btn-reset">
                   На страницу мастера
                   <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-mouse"></div>
-
-      </div>
-      <div class="swiper-container board__slider" data-target="two">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <ul class="board__list list-reset">
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <ul class="board__list list-reset">
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <ul class="board__list list-reset">
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <ul class="board__list list-reset">
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <ul class="board__list list-reset">
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <ul class="board__list list-reset">
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
-              </li>
-              <li class="board__item">
-                <div class="board__card">
-                  <img src="img/ramka.svg" alt="border" class="board__border">
-                  <img src="img/foto-master.jpg" alt="photo" class="board__photo">
-                  <img src="img/icon-spetsialist-dm.svg" alt="logo" class="board__logo">
-                </div>
-                <div class="board__name">Специалист: <span>Носова Светлана</span></div>
-                <div class="board__city">Волгоград Ополченского</div>
-                <button class="board__btn-more btn-reset">
-                  На страницу специалиста
-                  <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -473,14 +219,14 @@
         <div class="swiper-pagination"></div>
         <div class="swiper-mouse"></div>
       </div>
-      <button class="board__btn board-master btn-reset" data-path="one">
+      <a href="index.html" class="board__btn board-master btn-reset">
         <img src="img/icon-strelka.svg" alt="arrow" class="board__arrow-left">
         Посмотреть мастеров
-      </button>
-      <button class="board__btn board-specialist btn-reset board__btn--active" data-path="two">
+      </a>
+      <a href="specialist.html" class="board__btn board-specialist btn-reset board__btn--active">
         Посмотреть специалистов
         <img src="img/icon-strelka-pravo.svg" alt="arrow" class="board__arrow">
-      </button>
+      </a>
     </div>
   </div>
 
