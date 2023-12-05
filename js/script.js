@@ -18,7 +18,7 @@ let mainSlider = new Swiper('.board__slider', {
   slidesPerView: 1,
 
   autoplay: {
-    delay: 1000,
+    delay: 5000,
     stopOnLastSlide: false,
   },
 
