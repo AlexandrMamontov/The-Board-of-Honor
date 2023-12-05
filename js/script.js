@@ -52,6 +52,16 @@ tabsBtn.forEach(function(element) {
   });
 });
 
+document.querySelector(`[data-path="one"]`).addEventListener('click', function() {
+  mast.classList.remove('board__btn--active')
+  spec.classList.add('board__btn--active')
+})
+
+document.querySelector(`[data-path="two"]`).addEventListener('click', function() {
+  spec.classList.remove('board__btn--active')
+  mast.classList.add('board__btn--active')
+})
+
 let spec = document.querySelector('.board-specialist');
 let mast = document.querySelector('.board-master');
 spec.addEventListener('click', function() {
