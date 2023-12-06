@@ -76,7 +76,7 @@ body {
 .board__wrapper {
   margin-bottom: 30px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -470,9 +470,9 @@ body {
 
 .info__url {
   margin-bottom: 5px;
-  font-family: 'MyriadPro-Regular', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 21px;
   line-height: normal;
   color: #333;
 }
@@ -506,8 +506,8 @@ body {
 }
 
 .vh-hidden .board__btn--active {
-  bottom: 50%;
-  transform: translateY(50%);
+  bottom: 30%;
+  transform: translateY(30%);
 }
 
 .board__article::-webkit-scrollbar {
