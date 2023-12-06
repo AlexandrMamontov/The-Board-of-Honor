@@ -101,7 +101,7 @@ body {
   align-items: center;
 }
 
-.board__buttons a:nth-child(1) {
+.board__buttons a:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -119,12 +119,71 @@ body {
   border-radius: 8px;
 }
 
+.board__go {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  background: #df8844;
+  border-radius: 8px;
+  color: #fff;
+  overflow: hidden;
+  transition: background-color .3s ease-in-out;
+}
+
+.board__go:hover {
+  background: #333;
+  transition: background-color .3s ease-in-out;
+}
+
+.board__go::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 200px;
+  margin-left: 60px;
+  background: #fff;
+  opacity: 0.5;
+  position: absolute;
+  left: -40px;
+  top: -100px;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: all 0.1s;
+  animation-name: slideme;
+  animation-duration: 3s;
+  animation-delay: 0.05s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+
 .board__btn-post--active {
   background-color: #df8844;
 }
 
 .board__text {
   margin: 0;
+  width: 100%;
   font-family: 'MyriadPro-Regular', sans-serif;
   font-size: 21px;
   line-height: normal;
@@ -578,12 +637,8 @@ body {
     margin-right: unset;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-  }
-
-  .board__title {
-    margin-bottom: unset;
   }
 
   .board__text {
@@ -779,6 +834,11 @@ body {
     font-size: 15px;
   }
 
+  .board__go {
+    width: 130px;
+    font-size: 15px;
+  }
+
   .board__btn-more span {
     display: none;
   }
@@ -945,10 +1005,20 @@ body {
   .board__city {
     font-size: 10px;
   }
+
+  .board__go {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 370px) {
   .swiper-container {
     height: 300px;
+  }
+
+  .board__buttons a:not(:last-child) {
+    margin-right: 10px;
   }
 }
