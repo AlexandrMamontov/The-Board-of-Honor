@@ -152,6 +152,7 @@ body {
 }
 
 .swiper-pagination-bullet {
+  position: relative;
   width: 100%;
   height: 30px;
   margin: 0 0 20px 0 !important;
@@ -246,7 +247,7 @@ body {
 
 .board__list {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .board__item:not(:last-child) {
@@ -749,6 +750,10 @@ body {
   .info__name, .info__address, .info__list {
     margin-bottom: 30px;
   }
+
+  .info__news {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -828,5 +833,122 @@ body {
   .vh-hidden {
     height: calc(100vh - 38px);
     padding: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .board__wrapperr {
+    flex-direction: row;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    top: unset !important;
+    right: unset !important;
+    bottom: unset !important;
+    left: unset !important;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .swiper-container {
+    height: 470px;
+  }
+
+  .board__container {
+    padding: 0 15px;
+  }
+
+  .swiper-pagination-bullet span {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 0 20px 0 !important;
+    width: 50px;
+  }
+
+  .swiper-pagination-bullet::after {
+    width: 20px;
+    height: 4px;
+    top: 20px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  .swiper-container {
+    height: 430px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-container {
+    height: 400px;
+  }
+
+  .board__item {
+    width: calc((100% - 10px * 2) / 3);
+  }
+
+  .board__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .board__logo {
+    width: 20px;
+    right: 5px;
+    top: 7px;
+  }
+
+  .info__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info__item:not(:last-child) {
+    margin-right: unset;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-container {
+    height: 340px;
+  }
+
+  .board__date {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .board__title {
+    padding-top: 10px;
+    font-size: 35px;
+  }
+
+  .board__btn-post {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .board__text {
+    font-size: 14px;
+  }
+
+  .board__name {
+    font-size: 10px;
+  }
+
+  .board__city {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .swiper-container {
+    height: 300px;
   }
 }

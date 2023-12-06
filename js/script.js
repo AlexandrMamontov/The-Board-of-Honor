@@ -17,10 +17,10 @@ let mainSlider = new Swiper('.board__slider', {
 
   slidesPerView: 1,
 
-  autoplay: {
-    delay: 5000,
-    stopOnLastSlide: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   stopOnLastSlide: false,
+  // },
 
   speed: 1000,
   spaceBetween: 30,
@@ -38,5 +38,14 @@ let mainSlider = new Swiper('.board__slider', {
         document.querySelector('.board__text').style.opacity = '1';
       }, 500)
     }
-  }
+  },
+
+  breakpoints: {
+    768: {
+      direction: 'vertical',
+    },
+    320: {
+      direction: 'horizontal',
+    },
+  },
 })
