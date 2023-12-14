@@ -13,6 +13,10 @@
     <div class="board__date">
       Сегодня среда / 28 ноября 2023
     </div>
+    <div class="board__views">
+      <img alt="views" src="https://img.danila-master.ru/uploads/articlesImages/action/classical-monuments/icon-glaz.svg">
+      <span class="board__all">Всего просмотрели: 60</span>
+    </div>
     <div class="board__container vh-hidden">
       <div class="board__wrapper">
         <div class="board__block">
@@ -51,9 +55,11 @@
               <li class="info__item">
                 <img src="img/icon-god.svg" alt="" class="info__svg">
                 <div class="info__block">
-                  <div class="info__number">2013</div>
+                  <div class="info__number">
+                    <span class="info__projects" data-target="30">0</span>&nbsp;/&nbsp;<span class="info__projects" data-target="19">0</span>
+                  </div>
                   <div class="info__txt">
-                    Года начала работы
+                    Месяцев&nbsp;и&nbsp;дней в&nbsp;компании
                   </div>
                 </div>
               </li>
@@ -62,7 +68,7 @@
                 <div class="info__block">
                   <div class="info__number info__projects" data-target="782">0</div>
                   <div class="info__txt">
-                    Принято заказов на период
+                    Принято&nbsp;заказов на&nbsp;период
                   </div>
                 </div>
               </li>
@@ -106,7 +112,7 @@
 
   <script>
     let valueDisplays = document.querySelectorAll('.info__projects')
-    let interval = 100
+    let interval = 1000
 
     valueDisplays.forEach((valueDisplay) => {
       let startValue = 0

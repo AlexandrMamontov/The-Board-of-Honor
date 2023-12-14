@@ -69,10 +69,35 @@ body {
 
 .board__date {
   padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 50px;
   font-family: 'Myriad Pro Regular', sans-serif;
   font-size: 18px;
   line-height: normal;
+  color: #333;
+}
+
+.board__views {
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.board__views img {
+  margin-right: 20px;
+  width: 40px;
+}
+
+.board__all {
+  font-family: 'Myriad Pro Regular', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: normal;
+  color: #333;
 }
 
 .board__wrapper {
@@ -676,6 +701,7 @@ body {
 }
 
 .info__txt {
+  width: min-content;
   font-family: 'MyriadPro-Regular', sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -1080,6 +1106,14 @@ body {
     padding-left: 20px;
   }
 
+  .board__views {
+    padding-left: 20px;
+  }
+
+  .board__views img {
+    margin-right: 10px;
+  }
+
   .board__btn-more {
     width: 40px;
     height: 40px;
@@ -1146,6 +1180,10 @@ body {
     top: 20px;
     right: 15px;
   }
+
+  .board__views {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1195,7 +1233,23 @@ body {
   }
 
   .board__date {
+    padding-left: unset;
     text-align: center;
+    font-size: 14px;
+  }
+
+  .board__views {
+    padding-left: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .board__views img {
+    width: 30px;
+  }
+
+  .board__all {
     font-size: 14px;
   }
 
@@ -1227,17 +1281,6 @@ body {
     height: 30px;
     font-size: 12px;
   }
-}
-
-@media (max-width: 370px) {
-  .swiper-container {
-    height: 300px;
-  }
-
-  .board__buttons a:not(:last-child) {
-    margin-right: unset;
-    margin-bottom: 10px;
-  }
 
   .board__buttons {
     -webkit-box-orient: vertical;
@@ -1246,7 +1289,18 @@ body {
             flex-direction: column;
   }
 
+  .board__buttons a:not(:last-child) {
+    margin-right: unset;
+    margin-bottom: 10px;
+  }
+
   .board__go, .board__btn-post {
     width: 150px;
+  }
+}
+
+@media (max-width: 370px) {
+  .swiper-container {
+    height: 300px;
   }
 }
