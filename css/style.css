@@ -273,7 +273,7 @@ body {
 
 .swiper-container {
   width: 100%;
-  height: 627px;
+  height: 800px;
   overflow: hidden;
 }
 
@@ -443,6 +443,13 @@ body {
   width: calc((100% - 50px * 2) / 3);
 }
 
+.board__card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .board__card {
   position: relative;
 }
@@ -466,6 +473,10 @@ body {
   width: 50px;
 }
 
+.board__informations {
+  margin-bottom: 40px;
+}
+
 .board__name {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -481,7 +492,6 @@ body {
 }
 
 .board__city {
-  margin-bottom: 40px;
   font-family: 'Inter-Regular', sans-serif;
   font-size: 21px;
   line-height: normal;
@@ -499,7 +509,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 70px;
+  padding: 24px 0;
   background-color: #333;
   font-family: 'MyriadPro-Regular', sans-serif;
   font-size: 18px;
@@ -788,12 +798,7 @@ body {
   }
 
   .board__city {
-    margin-bottom: 25px;
     font-size: 18px;
-  }
-
-  .swiper-container {
-    height: 560px;
   }
 
   .swiper-pagination {
@@ -814,7 +819,7 @@ body {
   }
 
   .swiper-container {
-    height: 506px;
+    height: 650px;
   }
 
   .board__wrapper {
@@ -859,7 +864,6 @@ body {
 
   .board__btn-more {
     font-size: 15px;
-    height: 50px;
   }
 
   .board__arrow {
@@ -985,16 +989,11 @@ body {
   }
 
   .board__city {
-    margin-bottom: 15px;
     font-size: 15px;
   }
 
   .board__logo {
     width: 30px;
-  }
-
-  .swiper-container {
-    height: 440px;
   }
 
   .board__arrow {
@@ -1067,6 +1066,7 @@ body {
         align-self: center;
     width: 50px;
     border-radius: 50%;
+    padding: unset;
   }
 
   .board__buttons a:not(:last-child) {
@@ -1158,7 +1158,9 @@ body {
   }
 
   .swiper-container {
-    height: 470px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
   }
 
   .board__container {
@@ -1186,17 +1188,7 @@ body {
   }
 }
 
-@media (max-width: 670px) {
-  .swiper-container {
-    height: 430px;
-  }
-}
-
 @media (max-width: 576px) {
-  .swiper-container {
-    height: 400px;
-  }
-
   .board__item {
     width: calc((100% - 10px * 2) / 3);
   }
@@ -1229,7 +1221,7 @@ body {
 
 @media (max-width: 480px) {
   .swiper-container {
-    height: 340px;
+    height: 500px;
   }
 
   .board__date {
@@ -1301,6 +1293,14 @@ body {
 
 @media (max-width: 370px) {
   .swiper-container {
-    height: 300px;
+    height: 450px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 40px;
+  }
+
+  .swiper-pagination-bullet::after {
+    right: 10px;
   }
 }
