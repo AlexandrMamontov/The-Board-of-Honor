@@ -267,14 +267,21 @@ body {
   color: #333;
 }
 
-.board__cite {
+/* Alex убрал стиль */
+/* .board__cite {
   display: none;
-}
+} */
 
+/* Alex заменил высоту на 680px */
 .swiper-container {
   width: 100%;
-  height: 800px;
+  height: 680px;
   overflow: hidden;
+}
+
+/* Alex добавил стиль */
+.board__cite {
+  height: unset !important;
 }
 
 .swiper-pagination {
@@ -773,6 +780,11 @@ body {
 }
 
 @media (max-width: 1810px) {
+  /* Alex добавил стиль */
+  .swiper-container {
+    height: 620px;
+  }
+
   .board__container {
     max-width: 1300px;
   }
@@ -818,8 +830,9 @@ body {
     max-width: 1130px;
   }
 
+  /* Alex изменил высоту на 580px */
   .swiper-container {
-    height: 650px;
+    height: 580px;
   }
 
   .board__wrapper {
@@ -847,8 +860,9 @@ body {
             align-items: center;
   }
 
+  /* Alex удалил max-width */
   .board__text {
-    max-width: 80%;
+    /* max-width: 80%; */
     text-align: center;
   }
 
@@ -871,10 +885,11 @@ body {
     margin-left: 10px;
   }
 
+  /* Alex изменил высоту на 66px */
   .board-master,
   .board-specialist {
     width: 240px;
-    height: 50px;
+    height: 66px;
     font-size: 15px;
   }
 
@@ -1027,6 +1042,11 @@ body {
 }
 
 @media (max-width: 1024px) {
+  /* Alex добавил стиль */
+  .swiper-container {
+    height: 530px;
+  }
+
   .swiper-mouse {
     display: none;
   }
@@ -1065,6 +1085,8 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
     width: 50px;
+    /* Alex добавил высоту 50px */
+    height: 50px;
     border-radius: 50%;
     padding: unset;
   }
@@ -1188,6 +1210,27 @@ body {
   }
 }
 
+/* Alex добавил медиазапрос */
+@media (max-width: 690px) {
+  .swiper-container {
+    height: 560px;
+  }
+}
+
+/* Alex добавил медиазапрос */
+@media (max-width: 600px) {
+  .swiper-container {
+    height: 530px;
+  }
+}
+
+/* Alex добавил медиазапрос */
+@media (max-width: 500px) {
+  .swiper-container {
+    height: 500px;
+  }
+}
+
 @media (max-width: 576px) {
   .board__item {
     width: calc((100% - 10px * 2) / 3);
@@ -1291,9 +1334,17 @@ body {
   }
 }
 
-@media (max-width: 370px) {
+/* Alex добавил медиазапрос */
+@media (max-width: 450px) {
   .swiper-container {
-    height: 450px;
+    height: 460px;
+  }
+}
+
+@media (max-width: 370px) {
+  /* Alex изменил высоту на 430px */
+  .swiper-container {
+    height: 430px;
   }
 
   .swiper-pagination-bullet {
