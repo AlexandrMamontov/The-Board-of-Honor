@@ -27,20 +27,6 @@ let mainSlider = new Swiper('.board__slider', {
   direction: 'vertical',
   effect: 'slide',
 
-  // Alex убрал данную настройку
-  // on: {
-  //   slideChange: function () {
-  //     let activeSlide = this.slides[this.activeIndex];
-  //     let newText = activeSlide.querySelector('.board__cite').innerHTML;
-  //     document.querySelector('.board__text').style.opacity = '0';
-  //     document.querySelector('.board__text').style.transition = 'opacity .3s ease-in-out';
-  //     setTimeout(() => {
-  //       document.querySelector('.board__text').innerHTML = newText;
-  //       document.querySelector('.board__text').style.opacity = '1';
-  //     }, 500)
-  //   }
-  // },
-
   breakpoints: {
     768: {
       direction: 'vertical',
@@ -51,7 +37,6 @@ let mainSlider = new Swiper('.board__slider', {
   },
 })
 
-// Alex добавил настройки слайдера, в котором меняется текст
 let textSlider = new Swiper('.board__cite', {
   observer: true,
   observeParents: true,
