@@ -467,6 +467,8 @@ body {
 }
 
 .board__photo {
+  /* Alex добавил стиль */
+  display: block;
   width: 100%;
 }
 
